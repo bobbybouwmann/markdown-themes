@@ -1,0 +1,50 @@
+{
+    "name": "bobbybouwmann/markdown-themes",
+    "description": "A package to create markdown themes using a visual editor",
+    "keywords": [
+        "laravel",
+        "markdown",
+        "theme"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bobby Bouwmann",
+            "email": "bobbybouwmann@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/contracts": "~5.5",
+        "illuminate/support": "~5.5",
+        "illuminate/mail": "~5.5"
+    },
+    "require-dev": {
+        "mockery/mockery": "~0.9",
+        "orchestra/database": "~3.5",
+        "orchestra/testbench": "~3.5",
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bobbybouwmann\\Markdown\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bobbybouwmann\\Markdown\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bobbybouwmann\\Markdown\\MarkdownServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
